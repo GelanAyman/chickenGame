@@ -1,0 +1,25 @@
+body {
+    background-image: url(../imgs/SpaceBG.jpg);
+    background-size: cover;
+    cursor: none;
+}
+.spaceShip {
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.chicken {
+    width: 50px;
+    animation: chicken-movement 1s infinite alternate;
+}
+
+@keyframes chicken-movement {
+    0% {
+        scale: 0.9;
+        translate: -5px;
+    }
+    100% {
+        scale: 1;
+        translate: 0px;
+    }
+}
